@@ -1,0 +1,20 @@
+Folder PATH listing for volume Data
+Volume serial number is A426-FC0C
+D:.
+�   app.py
+�   decrypter.py
+�   divider.py
+�   encrypter.py
+�   requirements.txt
+�   restore.py
+�   runtime.txt
+�   temp.txt
+�   tools.py
+�   
+����templates
+        download.html
+        index.html
+        restore_success.html
+        success.html
+        upload.html
+        
