@@ -18,7 +18,9 @@ Load the key on the server.
 Decrypt the keys of the algorithms.
 Decrypt all the N parts of the file using the same algorithms which were used to encrypt them.
 Combine all the N parts to form the original file and provide it to the user for downloading.
-How to Run
+
+#How to Run
+
 NOTE: The project is based on Python 2.7.15 plateform running it on any other plateform might create some issues.
 
 Step 1: Install Requirements
