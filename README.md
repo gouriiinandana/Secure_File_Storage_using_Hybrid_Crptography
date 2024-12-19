@@ -1,7 +1,9 @@
 # Secure_File_Storage_using_Hybrid_Cryptography
 
 Objective: To Achieve a secure plateform for storing of files on Cloud using Hybrid Cryptography.
-Methodology
+
+#Methodology
+
 To achieve the above goal, the following methodology needs to be followed:
 
 Load the file on the server.
