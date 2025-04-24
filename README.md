@@ -76,6 +76,8 @@ Each file part is encrypted using a different algorithm to ensure additional lay
 ## ✨ Author
 
 Gouri Nandana
+
 B.Tech in CSE (Cybersecurity & Digital Forensics)
+
 Email: nandanagouri47@gmail.com
-Phone: +91-9207141944
+
