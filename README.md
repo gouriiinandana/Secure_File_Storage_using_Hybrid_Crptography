@@ -1,34 +1,82 @@
-# Secure_File_Storage_using_Hybrid_Cryptography
+🔐 Secure File Storage using Hybrid Cryptography
+A secure cloud-based file storage system that utilizes hybrid cryptography to ensure confidentiality and integrity of user data.
 
-Objective: To Achieve a secure plateform for storing of files on Cloud using Hybrid Cryptography.
+🚀 Objective
+To create a secure platform for storing files on the cloud using a combination of cryptographic algorithms in a round-robin manner. The system ensures that both data and encryption keys are protected, providing a robust mechanism for secure file storage and retrieval.
 
-#Methodology
+🛠️ Methodology
+🔒 Encryption Process
+Upload File: The user uploads a file to the server.
 
-To achieve the above goal, the following methodology needs to be followed:
+File Segmentation: The uploaded file is split into N parts.
 
-Load the file on the server.
-Dividing the uploaded file into N parts.
-Encrypting all the parts of the file using any one of the selected algorithms (Algorithm is changed with every part in round robin fashion).
-The keys for cryptography algorithms is then secured using a different algorithm and the key for this algorithm is provided to the user as public key.
-After the above 4 steps you will have a N files which are in encrypted form which are stored on the server and a key which is downloaded as public key for decrypting the file and downloading it.
+Hybrid Encryption: Each part is encrypted using a different cryptographic algorithm in a round-robin sequence.
 
-To restore the file, follow the following steps:
+Key Protection: The encryption keys are then encrypted using a separate algorithm.
 
-Load the key on the server.
-Decrypt the keys of the algorithms.
-Decrypt all the N parts of the file using the same algorithms which were used to encrypt them.
-Combine all the N parts to form the original file and provide it to the user for downloading.
+Key Delivery: The key for decrypting the encryption keys is securely shared with the user as a public key file.
 
-#How to Run
+Storage: Encrypted file parts are stored on the server.
 
-NOTE: The project is based on Python 2.7.15 plateform running it on any other plateform might create some issues.
+🔓 Decryption Process
+Upload Key: The user uploads their public key file.
 
-Step 1: Install Requirements
+Key Decryption: The encrypted encryption keys are decrypted using the provided key.
+
+File Decryption: Each file part is decrypted using the respective algorithm.
+
+File Reconstruction: Decrypted parts are combined to reconstruct the original file.
+
+Download: The user can download the fully restored original file.
+
+⚙️ How to Run
+Note: This project is based on Python 2.7.15. Running it on other versions may result in compatibility issues.
+
+📥 Step-by-Step Setup
+Clone the Repository
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/Secure_File_Storage_Hybrid_Cryptography.git
+cd Secure_File_Storage_Hybrid_Cryptography
+Install Requirements
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Run the Application
 
-Step 2: Run the application
+bash
+Copy
+Edit
 python app.py
+Access via Browser Visit http://localhost:5000 to use the application.
 
-Step 3: Visit the localhost from your browser
+📁 Folder Structure
+php
+Copy
+Edit
+.
+├── app.py                     # Main application file
+├── requirements.txt           # Python dependencies
+├── templates/                 # HTML templates
+├── static/                    # Static files (CSS, JS)
+└── uploads/                   # Directory for file parts
+🔐 Cryptographic Techniques Used
+AES (Advanced Encryption Standard)
 
-Step 4: Enjoy :)
+DES (Data Encryption Standard)
+
+RSA (Rivest–Shamir–Adleman)
+
+Custom round-robin encryption methodology
+
+Each file part is encrypted using a different algorithm to ensure additional layers of security.
+
+✨ Author
+Gouri Nandana
+B.Tech in CSE (Cybersecurity & Digital Forensics)
+Email: nandanagouri47@gmail.com
+Phone: +91-9207141944
