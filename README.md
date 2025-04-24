@@ -61,17 +61,6 @@ Edit
 python app.py
 Access via Browser Visit http://localhost:5000 to use the application.
 
-## 📁 Folder Structure
-
-php
-Copy
-Edit
-.
-├── app.py                     # Main application file
-├── requirements.txt           # Python dependencies
-├── templates/                 # HTML templates
-├── static/                    # Static files (CSS, JS)
-└── uploads/                   # Directory for file parts
 ## 🔐 Cryptographic Techniques Used
 
 AES (Advanced Encryption Standard)
